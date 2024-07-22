@@ -5,6 +5,7 @@ import texts from "../json/text.json";
 const HomeView = () => {
   const [index, setIndex] = useState<number>(0)
   const [progress, setProgress] = useState<number>(0);
+  const [showDarkScreen, setShowDarkScreen] = useState<boolean>(false);
 
   useEffect(()=> {
     const interval = setInterval(()=> {
@@ -18,10 +19,26 @@ const HomeView = () => {
       clearInterval(quoteIndexInterval);
       clearInterval(interval);
     }
-  },[])
+  },[]);
+
+  useEffect(() => {
+    if (progress === 101) {
+      setShowDarkScreen(true);
+      setTimeout(() => {
+        // Reload the page after 3 seconds
+        window.location.reload();
+      }, 3000);
+    }
+  }, [progress]);
+
   return ( 
 
     <>
+    {showDarkScreen && <>
+    <div className="h-screen w-screen text-white bg-black flex items-center justify-center overflow-hidden fixed z-10 lg:text-[40px] bt-text">
+      booting...
+    </div>
+    </>}
     <main className="h-screen w-screen bg-[#0076E0] px-[10%] py-[5vh]">
       <div className="w-full"><p className="lg:text-[120px]">&#58;&#40;</p></div>
       <div className="text-white"><p className="lg:text-[60px] leading-tight">{texts[index].quote}</p></div>

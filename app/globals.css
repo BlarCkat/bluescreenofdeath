@@ -31,3 +31,8 @@ body {
     text-wrap: balance;
   }
 }
+
+
+.bt-text{
+  font-family: "Lucida Console" system-ui, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+}

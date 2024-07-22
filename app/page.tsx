@@ -44,6 +44,8 @@ const HomeView = () => {
       <div className="text-white"><p className="text-[32px] lg:text-[60px] leading-tight">{texts[index].quote}</p></div>
       <div className="text-white"><p className="lg:text-[40px] leading-tight">{progress}% complete</p></div>
     </main>
+
+    <a href="https://www.producthunt.com/posts/bsod-blue-screen-of-death-screensaver?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-bsod&#0045;blue&#0045;screen&#0045;of&#0045;death&#0045;screensaver" target="_blank" className="fixed bottom-2 right-2"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=472934&theme=light" alt="BSOD&#0032;&#0045;&#0032;Blue&#0032;Screen&#0032;of&#0032;Death&#0032;Screensaver - One&#0032;software&#0032;malfunction&#0032;can&#0032;bring&#0032;down&#0032;critical&#0032;systems | Product Hunt" className="w-[250px] h-[54px]" width="250" height="54" /></a>
     </>
    );
 }

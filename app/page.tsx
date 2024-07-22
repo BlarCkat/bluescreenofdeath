@@ -22,7 +22,7 @@ const HomeView = () => {
   },[]);
 
   useEffect(() => {
-    if (progress === 2) {
+    if (progress ===1000) {
       setShowDarkScreen(true);
       setTimeout(() => {
         // Reload the page after 3 seconds

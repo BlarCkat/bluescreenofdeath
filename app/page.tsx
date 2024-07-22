@@ -40,8 +40,8 @@ const HomeView = () => {
     </div>
     </>}
     <main className="h-screen w-screen bg-[#0076E0] px-[10%] py-[5vh]">
-      <div className="w-full"><p className="lg:text-[120px]">&#58;&#40;</p></div>
-      <div className="text-white"><p className="lg:text-[60px] leading-tight">{texts[index].quote}</p></div>
+      <div className="w-full"><p className="text-[100px] lg:text-[120px]">&#58;&#40;</p></div>
+      <div className="text-white"><p className="text-[32px] lg:text-[60px] leading-tight">{texts[index].quote}</p></div>
       <div className="text-white"><p className="lg:text-[40px] leading-tight">{progress}% complete</p></div>
     </main>
     </>
